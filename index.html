@@ -1,75 +1,108 @@
 <!DOCTYPE html>
 
-<html lang="en-us">
-
-<head>
-
-<meta charset="UTF-8" >
-
-<meta name="view-port" content="width=device-width, initial-scale=1.0" >
-
-<link rel="stylesheet" href="slidestyle.css">
-
-<script src="slidejava.js"> </script>
-
-
-</head>
-
-
-<body>
-
-<div class="slideshow_container">
-
-  <div class="slide fade">
-
-    <div class="text"> 1/3 </div>
-    <div> <img src="img1.jpg"> </div>
-    <div class="caption_text"> Mountain </div>
-
-  </div>
-
-  <div class="slide fade">
-
-    <div class="text"> 2/3 </div>
-    <div> <img src="img2.jpg"> </div>
-    <div class="caption_text"> iceberg </div>
-
-  </div>
-
-  <div class="slide fade">
-
-    <div class="text"> 3/3 </div>
-    <div> <img src="img3.jpg"> </div>
-    <div class="caption_text"> aurora </div>
-
-  </div>
-
-  <!-- 左右箭頭  -->
-
-  <a class="prev" onclick="plusshow(-1)"> &#10094; </a>
-  <a class="next" onclick="plusshow(1)"> &#10095; </a>
-
-</div>
-
-<div style="text-align:center;">
-
-  <span class="dot" onclick="currentshow(1)"> </span>
-  <span class="dot" onclick="currentshow(2)"> </span>
-  <span class="dot" onclick="currentshow(3)"> </span>
-
-</div>
-
-
-  <script>
-
-    slideshow(1);
-
-  </script>
+<html>
+    <head>
+        <link rel="stylesheet" href="go_css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="go_js.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+        <body>
+            <div class="container">
+                <!-- 網站導覽 and 開頭 -->
+                 <div class="header_container">
+                    <div class="navigation_container">
+                        <a class="class_name" style="color:white;"> XX 圍棋 </a>
+                        <div class="navigation">
+                            <a href="index.html"> 首頁 </a>
+                            <a href="GO_Class_blank2.html"> 環境設施 </a>
+                            <a href="GO_Class_blank3.html"> 教師介紹 </a>
+                            <div class="course_down">
+                                <a style="cursor: pointer;"> 收費方式 </a>
+                                <div class="down_content">
+                                    <a href="GO_Class_blank4_1.html"> 個別班 </a>
+                                    <a href="GO_Class_blank4_2.html"> 團體班 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- RWD Navigation bar-->
+                         <div class="RWD_navigation">
+                            <div class="menu_icon_container" onclick="change(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                         </div>
+                    </div>
+                    <!-- RWD 導覽內容 -->
+                    <div class="RWD_content">
+                        <a href="index.html"> 首頁 </a>
+                        <a href="GO_Class_blank2.html"> 環境設施 </a>
+                        <a href="GO_Class_blank3.html"> 教師介紹 </a>
+                        <div onclick="RWD_course_show(this)">
+                            <a style="cursor: pointer;" class="RWD_course"> 收費方式  </a>
+                            <div class="RDW_down_content">
+                                <a href="GO_Class_blank4_1.html"> 個別班 </a>
+                                <a href="GO_Class_blank4_2.html"> 團體班 </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
 
 
 
-</body>
-
-
+                <!-- 幻燈秀 -->
+                <div id="slideshow" class="fade_arrow">
+                    <img src="slide_show1.jpg" class="slide_show_img fade">
+                    <!-- 左右箭頭 -->
+                    <a id="prev" onclick="plus(-1)">&#10094;</a>
+                    <a id="next" onclick="plus(1)">&#10095;</a>
+                    <img src="slide_show2.jpg" class="slide_show_img fade">
+                    <img src="slide_show3.jpg" class="slide_show_img fade">
+                    <img src="slide_show4.jpg" class="slide_show_img fade">
+                </div>
+                <script>
+                    showslide();
+                    auto();
+                 </script>
+                <!-- 預約資訊 -->
+                 <div id="booking">
+                    <!--預約介紹-->
+                    <div class="booking_container">
+                        <h2 style="margin:0px;"> XX圍棋教學專家 </h2>
+                        <p>歡迎蒞臨棋院</p>
+                        <p>體驗 20~ 30 分鐘的課程</p>
+                        <p> 參觀棋院的環境 </p>
+                        <p>提升棋力和態度的學習</p>
+                        <p>歡迎填寫表單參觀</p>
+                    </div>
+                    <!-- 預約表格填寫 -->
+                    <div class="booking_container">
+                        <form class="booking_form">
+                            <input type="text" placeholder="姓名">
+                        </form>
+                        <form class="booking_form">
+                            <input type="text" placeholder="Email">
+                        </form>
+                        <form class="booking_form">
+                            <input type="text" placeholder="電話">
+                        </form>
+                        <form class="booking_form">
+                            <input type="text" placeholder="棋力">
+                        </form>
+                        <form class="booking_form">
+                            <textarea placeholder="2024-9-15 10:00" rows="5"></textarea> 
+                        </form>
+                        <form class="booking_form">
+                            <input type="submit" value="預約">
+                        </form>
+                    </div>
+                 </div>
+                 <!-- footer -->
+                 <div id="footer">
+                    <p>地址：雲林縣xx鎮xx路xx號</p>
+                    <p>聯絡電話：09xxxxxxxx 林老師</p>
+                 </div>
+            </div>
+        </body>
 </html>
-

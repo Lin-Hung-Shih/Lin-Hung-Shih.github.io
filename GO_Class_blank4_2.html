@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="go_css.css">
+        <script src="go_js.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- 網站導覽 and 開頭 -->
+            <div class="header_container">
+                <div class="navigation_container">
+                    <a class="class_name" style="color:white;"> XX 圍棋 </a>
+                    <div class="navigation">
+                        <a href="index.html"> 首頁 </a>
+                        <a href="GO_Class_blank2.html"> 環境設施 </a>
+                        <a href="GO_Class_blank3.html"> 教師介紹 </a>
+                        <div class="course_down">
+                            <a style="cursor: pointer;"> 收費方式 </a>
+                            <div class="down_content">
+                                <a href="GO_Class_blank4_1.html"> 個別班 </a>
+                                <a href="GO_Class_blank4_2.html"> 團體班 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RWD Navigation bar-->
+                     <div class="RWD_navigation">
+                        <div class="menu_icon_container" onclick="change(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                     </div>
+                </div>
+                <!-- RWD 導覽內容 -->
+                <div class="RWD_content">
+                    <a href="index.html"> 首頁 </a>
+                    <a href="GO_Class_blank2.html"> 環境設施 </a>
+                    <a href="GO_Class_blank3.html"> 教師介紹 </a>
+                    <div onclick="RWD_course_show(this)">
+                        <a style="cursor: pointer;" class="RWD_course"> 收費方式  </a>
+                        <div class="RDW_down_content">
+                            <a href="GO_Class_blank4_1.html"> 個別班 </a>
+                            <a href="GO_Class_blank4_2.html"> 團體班 </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+            <!-- 收費說明 -->
+             <div class="group_course">
+                <h3> 團體課程 </h3>
+                    <p> 滿 6 人即可開班，每堂課 2 hr </p>
+                    <p> 級位每人 $300/1h，總計 600 元 / 堂 </p>
+                    <p> 段位每人 $400/1h，總計 800 元 / 堂</p>
+             </div>
+             <!-- footer -->
+            <!-- footer -->
+            <div id="footer">
+                <p>地址：雲林縣xx鎮xx路xx號</p>
+                <p>聯絡電話：09xxxxxxxx 林老師</p>
+            </div>
+        </div>
+    </body>
+</html>
