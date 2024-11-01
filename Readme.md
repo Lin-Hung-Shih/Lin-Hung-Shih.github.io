@@ -1,7 +1,7 @@
 <h1>圍棋補習班網站(RWD) </h1>
 
-![Login](https://github.com/Lin-Hung-Shih/Lin-Hung-Shih-portfolio/blob/master/img/my_work1.png?raw=true)
-![Login](https://github.com/Lin-Hung-Shih/Lin-Hung-Shih-portfolio/blob/master/img/my_work2.png?raw=true)
+![Login](https://github.com/Lin-Hung-Shih/Lin-Hung-Shih.github.io/blob/main/my_work1.png?raw=true)
+![Login](https://github.com/Lin-Hung-Shih/Lin-Hung-Shih.github.io/blob/main/my_work2.png?raw=true)
 
 * 不使用任何套件，自己透過 HTML、CSS、JS 建置一個響應式補習班網站(RWD)
 
